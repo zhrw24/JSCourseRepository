@@ -10,6 +10,16 @@ const personalMovieDB = {
     private: false
 };
 
+if(personalMovieDB.count < 10){
+    alert("Вы смотрели довольно мало фильмов");
+}else if(personalMovieDB.count > 10 && personalMovieDB.count < 30){
+    alert("Вы - среднестатистический зритель");
+}else if(personalMovieDB.count > 30){
+    alert("Вы - киноман");
+}else{
+    alert('Error');
+}
+
 let nameOfFilm = '',
       filmRating = 0;
 
