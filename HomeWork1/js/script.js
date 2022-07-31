@@ -16,7 +16,7 @@ const nameOfFilm = prompt("Name one film that you've seen recently", ''),
     filmRating1 = +prompt("Give the rating to this film", '');
 
 
-personalMovieDB.movies.nameOfFilm = filmRating;
-personalMovieDB.movies.nameOfFilm1 = filmRating1;
+personalMovieDB.movies[nameOfFilm] = filmRating;
+personalMovieDB.movies[nameOfFilm1] = filmRating1;
 
 console.log(personalMovieDB);
