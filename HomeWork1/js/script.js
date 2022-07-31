@@ -12,9 +12,9 @@ const personalMovieDB = {
 
 if(personalMovieDB.count < 10){
     alert("Вы смотрели довольно мало фильмов");
-}else if(personalMovieDB.count > 10 && personalMovieDB.count < 30){
+}else if(personalMovieDB.count >= 10 && personalMovieDB.count < 30){
     alert("Вы - среднестатистический зритель");
-}else if(personalMovieDB.count > 30){
+}else if(personalMovieDB.count >= 30){
     alert("Вы - киноман");
 }else{
     alert('Error');
@@ -28,7 +28,9 @@ for(let i = 0; i < 2; i++){
     filmRating = +prompt('Дайте оценку фильму', '');  
     if(nameOfFilm.length > 50 || nameOfFilm == '' || filmRating < 0 || filmRating > 10){
         i--;
+        alert('Error');
     }
+    alert('done');
 }
 
 console.log(personalMovieDB);
