@@ -16,6 +16,7 @@ function rememberMyFilms() {
             i--;
             alert('Error');
         }else{
+            personalMovieDB.movies[nameOfFilm] = filmRating;
             alert('done');
         }
     }
