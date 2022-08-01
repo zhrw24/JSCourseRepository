@@ -33,6 +33,8 @@ function detectPersonalLevel() {
     }
 }
 
+
+
 start();
 
 
@@ -44,8 +46,24 @@ const personalMovieDB = {
     private: false
 };
 
+function showMyDB() {
+    if(personalMovieDB.private == false) {
+        console.log(personalMovieDB);
+    }else {
+        console.log('Failed!This DB is private!');
+    }
+}
+
+function writeYourGenres() {
+    for(let i = 0; i < 3; i++) {
+        personalMovieDB.genres[i] = prompt(`Your favorite genre #${ i + 1 }`, ``);
+    }
+}
+
 detectPersonalLevel();
 
 rememberMyFilms();
 
-console.log(personalMovieDB);
+writeYourGenres();
+
+showMyDB();
