@@ -53,7 +53,16 @@ const personalMovieDB = {
     writeYourGenres: function() {
         for(let i = 0; i < 3; i++) {
             this.genres[i] = prompt(`Your favorite genre #${ i + 1 }`, ``);
+            if(this.genres[i] == "" || this.genres[i] == null) {
+                i--;
+                alert('Error');
+            }else {
+                alert('Done');
+            }
         }
+        this.genres.forEach((item, i) => {
+            console.log(`Любимый жанр №${ i + 1} - это ${item}`);
+        });
     },
 
     toggleVisibleMyDB: function() {
