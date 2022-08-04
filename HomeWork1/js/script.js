@@ -54,6 +54,14 @@ const personalMovieDB = {
         for(let i = 0; i < 3; i++) {
             this.genres[i] = prompt(`Your favorite genre #${ i + 1 }`, ``);
         }
+    },
+
+    toggleVisibleMyDB: function() {
+        if(this.private === false) {
+            this.private = true;
+        }else {
+            this.private = false;
+        }
     }
 };
 
@@ -64,5 +72,7 @@ personalMovieDB.detectPersonalLevel();
 personalMovieDB.rememberMyFilms();
 
 personalMovieDB.writeYourGenres();
+
+personalMovieDB.toggleVisibleMyDB();
 
 personalMovieDB.showMyDB();
