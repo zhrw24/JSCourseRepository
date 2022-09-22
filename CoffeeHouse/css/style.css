@@ -160,3 +160,99 @@ body {
     font-size: 24px;
     color: #fff;
 }
+.footer {
+    background-color: #171717;
+    padding-top: 85px;
+}
+.footer__top {
+    padding-bottom: 50px;
+    border-bottom: 1px solid #545454;
+    display: flex;
+    justify-content: space-between;
+}
+.footer__info-contact {
+    padding-top: 20px;
+    font-size: 14px;
+    color: #bcbcbc;
+    line-height: 32px;
+}
+.footer__info-contact a {
+    color: #bcbcbc;
+}
+.footer__social-title,
+.footer__instagram-title {
+    font-size: 11px;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+.footer__social {
+    max-width: 560px;
+    margin-right: 50px;
+    margin-left: auto;
+}
+.footer__social-form {
+    margin-bottom: 35px;
+}
+.footer__social-form input {
+    display: inline-block;
+    outline: none;
+    border: none;
+    vertical-align: top;
+}
+.footer__social-form input[type="email"] {
+    background-color:#fff;
+    height: 45px;
+    line-height: 45px;
+    width: 440px;
+    padding-left: 10px;padding-right: 10px;
+
+}
+.footer__social-form input[type="submit"] {
+    background-color: #8b775a;
+    text-transform: uppercase;
+    height: 45px;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 12px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: 12px;
+}
+.footer__social-item {
+    display: inline-block;
+}
+.footer__social-item + .footer__social-item {
+    padding-left: 8px;
+}
+.footer__social-item a {
+    width: 40px;
+    height: 40px;
+    border: 2px solid #8b775a;
+    border-radius: 50%;
+    position: relative;
+}
+.footer__social-item a span {
+    color: #8b775a;
+    font-size: 17px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.footer__instagram {
+    width: 255px;
+}
+.footer__instagram-images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.footer__instagram-images img {
+    margin-bottom: 7px;
+}
+
