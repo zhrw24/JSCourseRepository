@@ -160,6 +160,49 @@ body {
     font-size: 24px;
     color: #fff;
 }
+
+.menu {
+    padding-top: 100px;
+}
+.menu__quote {
+    font-size: 20px;
+    max-width: 545px;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 32px;
+    font-family: 'Montserrat', sans-serif;
+    font-family: Georgia;
+    color: #232323;
+    position: relative;
+    padding-left: 100px;
+    padding-right: 100px;
+    box-sizing: content-box;
+}
+.menu__quote:after,
+.menu__quote:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 50px;
+    background-color: #505050;
+    height: 1px;
+}
+.menu__quote:before {
+    left: 0;
+}
+.menu__quote:after {
+    right: 0;
+}
+.menu__quote-author {
+    text-align: center;
+    font-size: 12px;
+    font-style: italic;
+    font-family: 'Montserrat', sans-serif;
+    font-family: Georgia;
+    color: #494949;
+    max-width: 545px;
+    margin: 30px auto ;
+}
 .footer {
     background-color: #171717;
     padding-top: 85px;
@@ -254,5 +297,13 @@ body {
 }
 .footer__instagram-images img {
     margin-bottom: 7px;
+}
+.footer__copy {
+    font-size: 12px;
+    line-height: 32px;
+    color: #545454;
+    text-align: center;
+    padding: 20px 0;
+    font-family: 'Open Sans', sans-serif;
 }
 
